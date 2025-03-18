@@ -10,7 +10,7 @@ a{
 
 body{
   direction:rtl;
-  background: #1b8af1  url("./assest//a.jpg") ;
+  background: #1b8af1  url("./assest/a.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;

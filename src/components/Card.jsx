@@ -5,7 +5,7 @@ import Wavesurfer from "./Wavesurfer"
 import items from "../data/main" 
 
 function Card() {
-  const [audioUrl,setAudioUrl] =useState('https://ia800800.us.archive.org/23/items/Kishk-Muammar-Gaddafi/01.mp3')
+  const [audioUrl,setAudioUrl] =useState('https://ia600404.us.archive.org/23/items/alfirdwsiy1433_gmail_131_201802jh475787909-09087963532546678/001.mp3')
   return (
     <div>
         <div className="card" >
