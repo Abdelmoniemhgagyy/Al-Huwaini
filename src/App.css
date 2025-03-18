@@ -1,0 +1,211 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  direction:rtl;
+  background: #1b8af1  url("./assest//a.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  gap:20px
+
+}
+.header-title{
+  /* margin: 20px auto; */
+  color: #fff;
+  text-align: center;
+  background-color: #3405a3;
+  border-radius: 0px 33px;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+  margin: 10px 0;
+ }
+ 
+ .card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #6b64f3;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+ }
+ 
+ .card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+ }
+ 
+
+ 
+ .card .img {
+  width: 270px;
+  /* background: #6b64f3; */
+  border-radius: 11px;
+  margin: auto;
+  margin-top: 20px;
+ }
+ 
+ .card h1 {
+  text-align: center;
+  padding: 8px 25px;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  background: #6b64f3;
+  color: white;
+  font-weight: 600;
+ }
+ 
+ .card button:hover {
+  background: #534bf3;
+ }
+ .img-post{
+  width: 100%;
+  height: 300px;
+  border-radius: 11px;
+ }
+ /* ---------imgs page ---------------- */
+ .imgs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .card-img{
+    width: 80%;
+    height:auto ;
+    padding: 12px 0;
+    position: relative;
+  }
+  .card-img .img{
+    width: 80%;
+    
+  }
+  .card-img >a{
+    position: absolute;
+    top:8px;
+    left: 12px;
+    
+  }
+  .card-img >a>i{
+    color:#fff
+
+  }
+ /* ---------end imgs page ---------------- */
+
+ .items{
+  position: relative;
+  padding: 10px 0px 1px ;
+  text-align: center;
+  color: #fff;
+ }
+ .items>p{
+  font-size: 15px;
+  font-family: system-ui;
+  margin-bottom: 3px;
+  padding: 10px 8px;
+  background-color: #141313;
+  border-radius: 15px;
+  cursor: pointer;
+
+
+ }
+ .items>p:hover{
+  background-color: #14023d;
+  color: #fff;
+ }
+ .items-player-container {
+  position: fixed;
+  bottom: 0px;  /* تحديد الموقع من الأسفل */
+  left: 50%;  /* تحديد الموقع من اليسار ليكون في المنتصف */
+  transform: translateX(-50%);  /* تحريك العنصر إلى اليسار بمقدار نصف عرضه ليصبح في المنتصف تمامًا */
+  width: 330px;  /* عرض العنصر */
+  background-color: #27298d;  
+  z-index: 9999; 
+  border-radius: 20px;
+}
+
+.player-icons{
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  right: -2px;
+  top: -14px;
+  z-index: 999;
+}
+.img-player{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+ @media (min-width: 300px) {
+  body{
+    direction:rtl;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  .card-img .img{
+    width: 400px;
+  }
+  .card{
+    width: 320px;
+    margin: 20px 10px;
+  }
+  .card .img{
+    width:90%;
+  }
+
+
+}
+
