@@ -49,7 +49,7 @@ const items = [
     },
     { id: 13,
       title:"أثر الإسلام في الرجال 2",
-      url: 'href="https://archive.org/download/Al-Alheweny/006-2.mp3'
+      url: 'https://archive.org/download/Al-Alheweny/006-2.mp3'
     },
     { id: 14,
       title:"احذروا خطوات الشيطان",
@@ -57,7 +57,7 @@ const items = [
     },
     { id: 15,
       title:"احــذروا خطوات الشيطان [2]",
-      url: 'href="https://archive.org/download/Al-Alheweny/008-2.mp3'
+      url: 'https://archive.org/download/Al-Alheweny/008-2.mp3'
     },
     { id: 15,
       title:"أحوال النفس",
@@ -93,7 +93,7 @@ const items = [
     },
     { id: 23,
       title:"اسم الله العزيز",
-      url: 'https://archive.org/download/Al-Alheweny/017-.mp3"'
+      url: 'https://archive.org/download/Al-Alheweny/017-.mp3'
     },
     { id: 24,
       title:"أسئلة وأجوبة [1] ",
@@ -101,7 +101,7 @@ const items = [
     },
     { id: 25,
       title:"أسئلة وأجوبة [2]",
-      url: 'https://archive.org/download/Al-Alheweny/019-2.mp3"'
+      url: 'https://archive.org/download/Al-Alheweny/019-2.mp3'
     },
     { id: 26,
       title:"أصحاب الأخدود [1، 2]",
@@ -109,31 +109,31 @@ const items = [
     },
     { id: 27,
       title:"أصحاب الأضرحة",
-      url: 'https://archive.org/download/Al-Alheweny/021-.mp3'
+      url: 'https://ia903406.us.archive.org/9/items/Al-Alheweny/021-.mp3'
     },
     { id: 28,
       title:"أصحاب الغار 1",
-      url: 'https://archive.org/download/Al-Alheweny/022-1.mp3'
+      url: 'https://ia803406.us.archive.org/9/items/Al-Alheweny/022-1.mp3'
     },
     { id: 29,
       title:"أصحاب الغار 2",
-      url: 'https://archive.org/download/Al-Alheweny/023-2.mp3'
+      url: 'https://ia903406.us.archive.org/9/items/Al-Alheweny/023-2.mp3'
     },
     { id: 30,
       title:"أصحاب الغار 3",
-      url: 'https://archive.org/download/Al-Alheweny/024-3.mp3"'
+      url: 'https://ia803406.us.archive.org/9/items/Al-Alheweny/024-3.mp3'
     },
     { id: 31,
       title:"اعتداءات يتصدى لها",
-      url: 'https://archive.org/download/Al-Alheweny/025-.mp3'
+      url: 'https://ia803406.us.archive.org/9/items/Al-Alheweny/025-.mp3'
     },
     { id: 32,
       title:"الابتلاء",
-      url: 'https://archive.org/download/Al-Alheweny/026-.mp3'
+      url: 'https://ia803406.us.archive.org/9/items/Al-Alheweny/026-.mp3'
     },
     { id: 33,
       title:"الأحداث وتبلد الإحساس",
-      url: 'https://archive.org/download/Al-Alheweny/027-.mp3'
+      url: 'https://ia803406.us.archive.org/9/items/Al-Alheweny/027-.mp3'
     }
 
     // { id: 16,
