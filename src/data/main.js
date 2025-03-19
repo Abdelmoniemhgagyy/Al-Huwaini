@@ -59,7 +59,84 @@ const items = [
       title:"احــذروا خطوات الشيطان [2]",
       url: 'href="https://archive.org/download/Al-Alheweny/008-2.mp3'
     },
-    // { id: 15,
+    { id: 15,
+      title:"أحوال النفس",
+      url: 'https://archive.org/download/Al-Alheweny/009-.mp3'
+    },
+    { id: 16,
+      title:"اختيار الزوجة الصالحة",
+      url: 'https://archive.org/download/Al-Alheweny/010-.mp3'
+    },
+    { id: 17,
+      title:"آداب طالب العلم",
+      url: 'http://archive.org/download/Al-Alheweny/011-1-2.mp3'
+    },
+    { id: 18,
+      title:"أدب الخلاف",
+      url: 'https://archive.org/download/Al-Alheweny/012-.mp3'
+    },
+    { id: 19,
+      title:"إذا ضيعت الأمانة",
+      url: 'https://archive.org/download/Al-Alheweny/013-.mp3'
+    },
+    { id: 20,
+      title:"أسباب النصر والهزيمة",
+      url: 'https://archive.org/download/Al-Alheweny/014-.mp3'
+    },
+    { id: 21,
+      title:"استثمار الوقت عند العلماء",
+      url: 'https://archive.org/download/Al-Alheweny/015-.mp3'
+    },
+    { id: 22,
+      title:"استجيبو لله وللرسول",
+      url: 'https://archive.org/download/Al-Alheweny/016-.mp3'
+    },
+    { id: 23,
+      title:"اسم الله العزيز",
+      url: 'https://archive.org/download/Al-Alheweny/017-.mp3"'
+    },
+    { id: 24,
+      title:"أسئلة وأجوبة [1] ",
+      url: 'https://archive.org/download/Al-Alheweny/018-1.mp3'
+    },
+    { id: 25,
+      title:"أسئلة وأجوبة [2]",
+      url: 'https://archive.org/download/Al-Alheweny/019-2.mp3"'
+    },
+    { id: 26,
+      title:"أصحاب الأخدود [1، 2]",
+      url: 'https://archive.org/download/Al-Alheweny/020-12.mp3'
+    },
+    { id: 27,
+      title:"أصحاب الأضرحة",
+      url: 'https://archive.org/download/Al-Alheweny/021-.mp3'
+    },
+    { id: 28,
+      title:"أصحاب الغار 1",
+      url: 'https://archive.org/download/Al-Alheweny/022-1.mp3'
+    },
+    { id: 29,
+      title:"أصحاب الغار 2",
+      url: 'https://archive.org/download/Al-Alheweny/023-2.mp3'
+    },
+    { id: 30,
+      title:"أصحاب الغار 3",
+      url: 'https://archive.org/download/Al-Alheweny/024-3.mp3"'
+    },
+    { id: 31,
+      title:"اعتداءات يتصدى لها",
+      url: 'https://archive.org/download/Al-Alheweny/025-.mp3'
+    },
+    { id: 32,
+      title:"الابتلاء",
+      url: 'https://archive.org/download/Al-Alheweny/026-.mp3'
+    },
+    { id: 33,
+      title:"الأحداث وتبلد الإحساس",
+      url: 'https://archive.org/download/Al-Alheweny/027-.mp3'
+    }
+
+    // { id: 16,
     //   title:"",
     //   url: ''
     // },
