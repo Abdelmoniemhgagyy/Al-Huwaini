@@ -21,8 +21,7 @@ const Wavesurfer = ({ audioUrl }) => {
       responsive: true, // اجعل الموجة مرنة مع حجم الشاشة
     });
 
-    // تحميل الرابط الصوتي
-    wave.load(audioUrl);
+   wave.load(audioUrl);
 
     // عندما يصبح الصوت جاهزًا
     wave.on('ready', () => {
