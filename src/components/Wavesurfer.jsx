@@ -1,68 +1,78 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import WaveSurfer from 'wavesurfer.js';
 import Play from '../assest/play.png';
 import Pause from '../assest/pause.png';
-import LoadingIcon from '../assest/loading.png';
+import LoadingIcon from '../assest/loading.png'; // استبدل بهذا مسار الأيقونة الخاصة بالتحميل
 
 const Wavesurfer = ({ audioUrl }) => {
-  const waveformRef = useRef(null);
-  const [wavesurferInstance, setWavesurferInstance] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [wavesurferInstance, setWavesurferInstance] = useState(null); // حالة للاحتفاظ بالنسخة المبدئية للموجة
+  const [isPlaying, setIsPlaying] = useState(false); // حالة لتحديد ما إذا كان الصوت قيد التشغيل أم لا
+  const [isLoading, setIsLoading] = useState(true); // حالة لتتبع ما إذا كان الصوت قيد التحميل
 
   useEffect(() => {
-    if (!audioUrl) {
-      console.error('No audio URL provided');
-      setIsLoading(false);
-      return;
-    }
-
+    // إنشاء نسخة من wavesurfer عند تحميل المكون
     const wave = WaveSurfer.create({
-      container: waveformRef.current,
-      waveColor: '#1b0254',
-      progressColor: '#ffffff',
-      cursorColor: 'navy',
-      barWidth: 2,
-      height: 50,
-      responsive: true,
-      backend: 'MediaElement',
+      container: '#waveform', // حاوية الموجة الصوتية
+      waveColor: '#1b0254', // لون الموجة الصوتية
+      progressColor: '#ffffff', // لون التقدم في الموجة
+      cursorColor: 'navy', // لون المؤشر
+      barWidth: 2, // عرض الأعمدة الموجية
+      height: 50, // ارتفاع الموجة
+      responsive: true, // اجعل الموجة مرنة مع حجم الشاشة
     });
 
+    // تحميل الرابط الصوتي
     wave.load(audioUrl);
 
+    // عندما يصبح الصوت جاهزًا
     wave.on('ready', () => {
-      setIsLoading(false);
+      setIsLoading(false); // تغيير حالة التحميل
+      wave.play(); // تشغيل الصوت بعد تحميله
+      setIsPlaying(true); // تحديد حالة التشغيل على أنها قيد التشغيل
     });
 
-    wave.on('error', (err) => {
-      console.error('WaveSurfer Error:', err);
-      setIsLoading(false);
+    // أثناء تحميل الصوت
+    wave.on('loading', () => {
+      setIsLoading(true); // تأكد من أن الصوت لا يزال في حالة تحميل
     });
 
-    setWavesurferInstance(wave);
+    setWavesurferInstance(wave); // حفظ النسخة داخل حالة المكون
 
+    // تنظيف الموجة عند مغادرة المكون
     return () => {
       wave.destroy();
     };
-  }, [audioUrl]);
+  }, [audioUrl]); // إعادة تحميل عند تغيير `audioUrl`
 
+  // دالة لتشغيل/إيقاف الصوت
   const togglePlay = () => {
     if (wavesurferInstance) {
       wavesurferInstance.playPause();
-      setIsPlaying(!isPlaying);
+      setIsPlaying(!isPlaying); // تغيير حالة التشغيل
     }
   };
 
   return (
     <div>
-      <div ref={waveformRef}></div>
-      {isLoading ? (
-        <div>
+      <div id="waveform"></div>
+
+      {/* حالة تحميل الصوت */}
+      {isLoading && (
+        <div >
           <img src={LoadingIcon} alt="Loading..." className="img-player" />
         </div>
-      ) : (
-        <div className="player-icons" onClick={togglePlay}>
-          <img src={isPlaying ? Pause : Play} alt={isPlaying ? 'Pause' : 'Play'} className="img-player" />
+      )}
+
+      {/* مشغل الصوت */}
+      {!isLoading && (
+        <div className="player-icons">
+          <div onClick={togglePlay}>
+            {isPlaying ? (
+              <img src={Pause} alt="Pause" className="img-player" />
+            ) : (
+              <img src={Play} alt="Play" className="img-player" />
+            )}
+          </div>
         </div>
       )}
     </div>
