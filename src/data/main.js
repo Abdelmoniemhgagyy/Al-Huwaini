@@ -69,7 +69,7 @@ const items = [
     },
     { id: 17,
       title:"آداب طالب العلم",
-      url: 'http://archive.org/download/Al-Alheweny/011-1-2.mp3'
+      url: 'https://archive.org/download/Al-Alheweny/011-1-2.mp3'
     },
     { id: 18,
       title:"أدب الخلاف",
@@ -140,6 +140,6 @@ const items = [
     //   title:"",
     //   url: ''
     // },
-//http://www.islamic-tape.com/2013/11/lessons-Lectures-Speeches-mp3-sheikh-Abu-Ishaq-Al-Alheweny.html
+//https://www.islamic-tape.com/2013/11/lessons-Lectures-Speeches-mp3-sheikh-Abu-Ishaq-Al-Alheweny.html
 ]
 export default items
